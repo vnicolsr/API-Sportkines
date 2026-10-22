@@ -1,0 +1,5 @@
+# Hostinger Node.js - redirigir tráfico al app
+# Este archivo puede ser necesario según la configuración del hosting
+DirectoryIndex disabled
+RewriteEngine On
+RewriteRule ^(.*)$ http://127.0.0.1:%{ENV:PORT}/$1 [P,L]
